@@ -4,7 +4,7 @@ require_relative 'version'
 # Note: run this code by running "rake" at the command line
 # To see full list of options, run "rake -T"
 
-data = Squib.xlsx file: 'data/game.xlsx', sheet: 0
+data = Squib.xlsx file: 'data/BossFight.xlsx', sheet: 0
 
 Squib::Deck.new(cards: data.nrows) do
   background color: :white
@@ -12,10 +12,20 @@ Squib::Deck.new(cards: data.nrows) do
 
   text str: data.name, layout: :name
 
-  text str: data.atk.map { |s| "#{s} ATK" }, layout: :ATK
-  text str: data.def.map { |s| "#{s} DEF" }, layout: :DEF
+  text str: data.value, layout: :VAL
+  # text str: data.def.map { |s| "#{s} DEF" }, layout: :DEF
+  text str: data.def, layout: :DEF
 
-  svg file: 'example.svg'
+
+  svg file: data.stat, layout: :ATR
+  svg file: 'checked-shield.svg', layout: :shield
+  
+  text str: data.text, layout: :text do |embed|
+	embed.svg key: '[str]', file: 'img/str.svg', layout: :embeded
+	embed.svg key: '[agl]', file: 'img/agl.svg', layout: :embeded
+	embed.svg key: '[int]', file: 'img/int.svg', layout: :embeded
+
+  end
 
   text str: MySquibGame::VERSION, layout: :version
 
@@ -31,4 +41,11 @@ Squib::Deck.new(cards: data.nrows) do
                trim: '0.125in',
                rows: 3, columns: 3
   end
+
+  build(:tts) do
+    save_sheet prefix: 'tts_sheet_',
+               trim: 0,
+               rows: 10, columns: 7
+  end
+
 end

@@ -1,25 +1,49 @@
+VAL:
+  x: 100
+  y: 100
+  width: 100
+  height: 100
+  font: Arial 20
+  valign: middle
+  align: center
+  ellipsize: false
+DEF:
+  extends: VAL
+  x: 625
+
+ATR:
+  x: 220
+  y: 100
+  width: 100
+  height: 100
+  align: center
+shield:
+  extends: ATR
+  x: 505
+
 name:
-  x: 90
-  y: 90
-  width: 500
+  x: 0
+  y: 280
+  width: 825
   height: 50
   font: Arial 18
   valign: middle
-  align: left
+  align: center
   ellipsize: false
 
-ATK:
-  x: 90
-  y: 190
-  width: 200
-  height: 50
+text:
   font: Arial 12
-  valign: middle
+  x: 150
+  y: 350
+  width: 550
+  height: 1000
   align: left
-  ellipsize: false
-DEF:
-  extends: ATK
-  y: += 75
+
+embeded:
+  height: 50
+  width: 50
+  align: center
+  valign: middle
 
 version:
   font: Arial 6
