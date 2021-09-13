@@ -39,7 +39,7 @@ text:
   height: 1000
   align: left
 
-embeded:
+embedded:
   height: 50
   width: 50
   align: center

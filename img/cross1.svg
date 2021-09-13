@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <g>
+    <rect x="424" y="32" width="56" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="32" y="32" width="56" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="88" y="88" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="200" y="88" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="312" y="88" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="32" y="88" width="56" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="424" y="88" width="56" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="88" y="200" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="200" y="200" width="112" height="112" fill="#231f20" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="312" y="200" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="32" y="200" width="56" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="424" y="200" width="56" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="88" y="312" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="200" y="312" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="312" y="312" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="32" y="312" width="56" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="424" y="312" width="56" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="88" y="32" width="112" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="200" y="32" width="112" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="312" y="32" width="112" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="424" y="424" width="56" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="32" y="424" width="56" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="88" y="424" width="112" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="200" y="424" width="112" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="312" y="424" width="112" height="56" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+  </g>
+  <path d="M256,208c-5.972,0-10.267,3.412-12.748,7.7a27.1,27.1,0,0,0-3.322,12.17c-6.77,3.614-14.27,7.258-20.309,10.983a42.837,42.837,0,0,0-8.008,6.032c-2.079,2.112-3.613,4.49-3.613,7.3a4.446,4.446,0,0,0,1.148,2.881,9.082,9.082,0,0,0,2.171,1.786,27.911,27.911,0,0,0,6.063,2.645,54.52,54.52,0,0,0,10.6,2.287c-3.318,6.17-7.732,11.838-11.6,17.268-4.471,6.276-8.376,12.3-8.376,18.981a23.818,23.818,0,0,0,.069,2.45,4.038,4.038,0,0,0,.975,2.426,3.485,3.485,0,0,0,2.248,1.022,19.846,19.846,0,0,0,2.3.072h24.673c1.791,0,3.1.118,4.452-.819s1.841-2.215,2.8-4.125l.02-.038.017-.04s2.151-4.721,4.717-9.405a60.956,60.956,0,0,1,3.888-6.328,13.384,13.384,0,0,1,1.581-1.852.28.28,0,0,1,.524,0,13.384,13.384,0,0,1,1.581,1.852,60.956,60.956,0,0,1,3.888,6.328c2.566,4.684,4.717,9.405,4.717,9.405l.017.039.02.039c.961,1.91,1.449,3.181,2.789,4.12s2.649.824,4.414.824H298.47a19.147,19.147,0,0,0,2.266-.073,3.461,3.461,0,0,0,2.238-1.034,4.045,4.045,0,0,0,.958-2.417,24.03,24.03,0,0,0,.068-2.446c0-6.687-3.9-12.7-8.376-18.982-3.87-5.43-8.284-11.1-11.6-17.268a54.453,54.453,0,0,0,10.595-2.287,27.959,27.959,0,0,0,6.063-2.644,9.038,9.038,0,0,0,2.17-1.786A4.444,4.444,0,0,0,304,252.176c0-2.8-1.534-5.184-3.613-7.3a42.88,42.88,0,0,0-8.008-6.032c-6.039-3.725-13.539-7.369-20.309-10.983a27.1,27.1,0,0,0-3.322-12.169C266.268,211.411,261.972,208,256,208Z" fill="#fff"/>
+</svg>

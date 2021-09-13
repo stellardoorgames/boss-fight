@@ -1,0 +1,60 @@
+name:
+  x: 0
+  y: 100
+  width: deck
+  height: 50
+  font: Arial 18
+  align: center
+  ellipsize: false
+
+archetype:
+  x: 100
+  y: deck - 150
+  width: deck - 200
+  height: 50
+  font: Arial 10
+  align: left
+  ellipsize: false
+
+equip:
+  extends: archetype
+  align: right
+
+cost:
+  font: Arial 16
+  x: 100
+  y: 250
+  width: 200
+  height: 300
+  align: left
+  #valign: middle
+
+text:
+  font: Arial 14
+  x: 300
+  y: 250
+  width: deck - 350
+  height: 600
+  align: left
+
+pattern:
+  x: 100
+  y: 600
+  width: 150
+  height: 150
+
+embedded:
+  height: 50
+  width: 50
+  align: center
+  valign: middle
+
+cost_icon:
+  extends: embedded
+  height: 70
+  width: 70
+
+version:
+  font: Arial 6
+  x: 15
+  y: 45

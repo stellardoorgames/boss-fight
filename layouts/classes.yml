@@ -1,0 +1,44 @@
+character:
+  x: 0
+  y: 100
+  width: deck
+  height: 50
+  font: Arial 18
+  valign: middle
+  align: center
+  ellipsize: false
+
+ability1:
+  x: 100
+  y: 200
+  width: deck - 200
+  height: 50
+  font: Arial 16
+  align: left
+
+ability1text:
+  font: Arial 12
+  x: 100
+  y: 300
+  width: deck - 200
+  height: 300
+  align: left
+
+ability2:
+  extends: ability1
+  y: 600
+
+ability2text:
+  extends: ability1text
+  y: 700
+
+embedded:
+  height: 50
+  width: 50
+  align: center
+  valign: middle
+
+version:
+  font: Arial 6
+  x: 725
+  y: 45

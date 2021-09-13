@@ -1,0 +1,29 @@
+name:
+  x: 0
+  y: 100
+  width: deck
+  height: 50
+  font: Arial 18
+  align: center
+  ellipsize: false
+
+image1:
+  x: center - 125
+  y: 300
+  width: 250
+  height: 250
+
+image2:
+  extends: image1
+  y: 600
+
+background:
+  x: 0
+  y: 0
+  width: deck
+  height: deck
+
+version:
+  font: Arial 6
+  x: 15
+  y: 45

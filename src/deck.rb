@@ -1,10 +1,11 @@
 require 'squib'
 require_relative 'version'
+require_relative 'sheets'
 
 # Note: run this code by running "rake" at the command line
 # To see full list of options, run "rake -T"
 
-data = Squib.xlsx file: 'data/BossFight.xlsx', sheet: 0
+data = Squib.xlsx file: 'data/BossFight.xlsx', sheet: Sheets::Actions
 
 Squib::Deck.new(cards: data.nrows) do
   background color: :white
@@ -13,7 +14,6 @@ Squib::Deck.new(cards: data.nrows) do
   text str: data.name, layout: :name
 
   text str: data.value, layout: :VAL
-  # text str: data.def.map { |s| "#{s} DEF" }, layout: :DEF
   text str: data.def, layout: :DEF
 
 
@@ -21,9 +21,9 @@ Squib::Deck.new(cards: data.nrows) do
   svg file: 'checked-shield.svg', layout: :shield
   
   text str: data.text, layout: :text do |embed|
-	embed.svg key: '[str]', file: 'img/str.svg', layout: :embeded
-	embed.svg key: '[agl]', file: 'img/agl.svg', layout: :embeded
-	embed.svg key: '[int]', file: 'img/int.svg', layout: :embeded
+	embed.svg key: '[str]', file: 'img/str.svg', layout: :embedded
+	embed.svg key: '[agl]', file: 'img/agl.svg', layout: :embedded
+	embed.svg key: '[int]', file: 'img/int.svg', layout: :embedded
 
   end
 
@@ -34,18 +34,18 @@ Squib::Deck.new(cards: data.nrows) do
     cut_zone
   end
 
-  save format: :png
+  save format: :png, prefix: 'actions_'
 
   build(:pnp) do
-    save_sheet prefix: 'pnp_sheet_',
+    save_sheet prefix: 'pnp_actions_',
                trim: '0.125in',
                rows: 3, columns: 3
   end
 
   build(:tts) do
-    save_sheet prefix: 'tts_sheet_',
+    save_sheet prefix: 'tts_actions_',
                trim: 0,
-               rows: 10, columns: 7
+               rows: 7, columns: 10
   end
 
 end

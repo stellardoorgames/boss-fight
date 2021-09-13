@@ -6,13 +6,23 @@ require 'rake/clean'
 CLEAN.include('_output/*').exclude('_output/gitkeep.txt')
 
 desc 'By default, just build the deck without extra options'
-task default: [:deck]
+task default: [:deck, :ground, :equipment]
+
+desc 'Build everything for Tabletop Simulator'
+task tts: [:with_tts, :deck, :ground, :equipment, :classes, :bossactions]
+
+#desc 'Build everything for Tabletop Simulator'
+#task ttsproof: [:with_tts, :deck, :ground, :equipment]
 
 desc 'Build everything, with all the options'
-task all: [:with_tts, :with_pnp, :with_proofs, :deck]
+task all: [:with_tts, :with_proofs, :deck, :ground, :equipment, :classes, :bossactions]
 
 desc 'Build the deck'
 task(:deck)     { load 'src/deck.rb' }
+task(:ground)     { load 'src/ground.rb' }
+task(:equipment)     { load 'src/equipment.rb' }
+task(:classes)     { load 'src/classes.rb' }
+task(:bossactions)     { load 'src/bossactions.rb' }
 
 desc 'Enable proof lines'
 task(:with_proofs) do
