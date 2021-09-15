@@ -5,4 +5,5 @@ module Sheets
 	Equipment = 3
 	BossActions = 4
 	Bosses = 5
+	Chits = 6
 end

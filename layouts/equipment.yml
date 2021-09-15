@@ -16,7 +16,7 @@ archetype:
   align: left
   ellipsize: false
 
-equip:
+value:
   extends: archetype
   align: right
 
@@ -42,6 +42,12 @@ pattern:
   y: 600
   width: 150
   height: 150
+
+damage:
+  x: 110
+  y: 110
+  width: 70
+  height: 70
 
 embedded:
   height: 50

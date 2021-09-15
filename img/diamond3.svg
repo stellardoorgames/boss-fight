@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <g>
-    <rect x="32" y="32" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="32" y="32" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="144" y="32" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="256" y="32" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="368" y="32" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="32" y="144" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
-    <rect x="144" y="144" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="144" y="144" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="256" y="144" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="368" y="144" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="32" y="256" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
-    <rect x="144" y="256" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
-    <rect x="256" y="256" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="144" y="256" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="256" y="256" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="368" y="256" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="144" y="368" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <rect x="256" y="368" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
-    <rect x="368" y="368" width="112" height="112" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
+    <rect x="368" y="368" width="112" height="112" fill="#939598" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
     <g>
       <rect x="32" y="368" width="112" height="112" fill="#231f20" stroke="#000" stroke-miterlimit="10" stroke-width="10"/>
       <path d="M88,373.6c-6.271,0-10.781,3.582-13.386,8.081a28.468,28.468,0,0,0-3.487,12.778c-7.109,3.8-14.984,7.621-21.325,11.532a45,45,0,0,0-8.408,6.334c-2.183,2.217-3.794,4.715-3.794,7.661a4.667,4.667,0,0,0,1.206,3.025,9.466,9.466,0,0,0,2.279,1.875,29.284,29.284,0,0,0,6.366,2.777,57.234,57.234,0,0,0,11.125,2.4C55.093,436.544,50.458,442.5,46.4,448.2c-4.695,6.589-8.8,12.909-8.8,19.93a24.984,24.984,0,0,0,.072,2.572,4.241,4.241,0,0,0,1.025,2.547,3.654,3.654,0,0,0,2.36,1.073,20.858,20.858,0,0,0,2.411.076H69.374c1.881,0,3.258.123,4.674-.86s1.934-2.326,2.943-4.331l.021-.041.018-.041s2.258-4.957,4.953-9.876a64.241,64.241,0,0,1,4.081-6.644,13.907,13.907,0,0,1,1.661-1.944,1.2,1.2,0,0,1,.275-.191,1.219,1.219,0,0,1,.275.191,13.907,13.907,0,0,1,1.661,1.944,64.241,64.241,0,0,1,4.081,6.644c2.694,4.919,4.953,9.876,4.953,9.876l.019.041.02.04c1.009,2.006,1.521,3.341,2.929,4.326s2.781.865,4.635.865h26.02a20.141,20.141,0,0,0,2.379-.076,3.631,3.631,0,0,0,2.351-1.086,4.243,4.243,0,0,0,1.006-2.538,25.469,25.469,0,0,0,.071-2.568c0-7.021-4.1-13.34-8.8-19.93-4.063-5.7-8.7-11.653-12.181-18.132a57.231,57.231,0,0,0,11.125-2.4,29.381,29.381,0,0,0,6.366-2.777,9.493,9.493,0,0,0,2.279-1.876,4.663,4.663,0,0,0,1.206-3.025c0-2.946-1.611-5.443-3.794-7.661a45,45,0,0,0-8.408-6.333c-6.341-3.912-14.216-7.738-21.325-11.532a28.465,28.465,0,0,0-3.487-12.778C98.781,377.182,94.271,373.6,88,373.6Z" fill="#fff"/>

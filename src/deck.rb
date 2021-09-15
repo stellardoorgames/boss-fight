@@ -27,6 +27,8 @@ Squib::Deck.new(cards: data.nrows) do
 
   end
 
+  text str: data.level.map { |s| "Level: #{s}"}, layout: :level
+
   text str: MySquibGame::VERSION, layout: :version
 
   build(:proofs) do

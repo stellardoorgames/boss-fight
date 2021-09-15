@@ -9,8 +9,8 @@ Squib::Deck.new(cards: data.nrows) do
   use_layout file: 'layouts/equipment.yml'
 
   text str: data.name, layout: :name
-  text str: data.archetype, layout: :archetype
-  text str: data.equip, layout: :equip
+  text str: data.archetype.map { |s| "Class: #{s}"}, layout: :archetype
+  text str: data.value.map { |s| "Value : #{s}"}, layout: :value
 
   text str: data.cost.map { |s| "Cost:\n#{s}" }, layout: :cost do |embed|
 	embed.svg key: '[ap]', file: 'img/action-point.svg', layout: :cost_icon
@@ -27,6 +27,7 @@ Squib::Deck.new(cards: data.nrows) do
   end
 
   svg file: data.pattern, layout: :pattern
+  svg file: data.damage, layout: :damage
 
   text str: MySquibGame::VERSION, layout: :version
 

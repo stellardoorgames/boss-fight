@@ -1,0 +1,90 @@
+name:
+  x: 0
+  y: 100
+  width: deck
+  height: 50
+  font: Arial 18
+  align: center
+  ellipsize: false
+
+level:
+  x: 100
+  y: 200
+  width: middle - 100
+  height: 50
+  font: Arial 10
+  align: left
+  ellipsize: false
+hp:
+  extends: level
+  x: middle
+apt:
+  extends: level
+  y: 250
+movement:
+  extends: level
+  y: 250
+  x: middle
+
+melee_img:
+  x: 100
+  y: 320
+  width: 100
+  height: 100
+ranged_img:
+  extends: melee_img
+  y: += 110
+magic_img:
+  extends: ranged_img
+  y: += 110
+star_img:
+  extends: magic_img
+  y: += 110
+
+melee_range:
+  extends: melee_img
+  x: += 110
+ranged_range:
+  extends: melee_range
+  y: += 110
+magic_range:
+  extends: ranged_range
+  y: += 110
+
+melee:
+  extends: melee_range
+  font: Arial 12
+  x: += 110
+  width: deck - 400
+  height: 100
+  valign: middle
+  align: left
+  ellipsize: true
+ranged:
+  extends: melee
+  y: += 110
+magic:
+  extends: ranged
+  y: += 110
+star:
+  extends: magic
+  y: += 110
+
+text:
+  extends: star_img
+  font: Arial 12
+  y: += 130
+  width: deck - x
+  height: 600
+  align: left
+
+embedded:
+  height: 50
+  width: 50
+  align: center
+  valign: middle
+
+version:
+  font: Arial 6
+  x: 15
+  y: 45

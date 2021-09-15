@@ -45,6 +45,13 @@ embedded:
   align: center
   valign: middle
 
+level:
+  x: 0
+  y: deck - 100
+  height: 50
+  width: deck
+  align: center
+
 version:
   font: Arial 6
   x: 725
