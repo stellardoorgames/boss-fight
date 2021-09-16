@@ -2,14 +2,11 @@ require 'squib'
 require_relative 'version'
 require_relative 'sheets'
 
-# Note: run this code by running "rake" at the command line
-# To see full list of options, run "rake -T"
-
 data = Squib.xlsx file: 'data/BossFight.xlsx', sheet: Sheets::Actions
 
 Squib::Deck.new(cards: data.nrows) do
   background color: :white
-  use_layout file: 'layouts/deck.yml'
+  use_layout file: 'layouts/actions.yml'
 
   text str: data.name, layout: :name
 

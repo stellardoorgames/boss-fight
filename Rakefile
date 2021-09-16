@@ -6,29 +6,37 @@ require 'rake/clean'
 CLEAN.include('_output/*').exclude('_output/gitkeep.txt')
 
 desc 'By default, just build the deck without extra options'
-task default: [:deck, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
+task default: [:actions, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
 
 desc 'Build everything for Tabletop Simulator'
-task tts: [:with_tts, :deck, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
+task tts: [:with_tts, :actions, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
 
 #desc 'Build everything for Tabletop Simulator'
-#task ttsproof: [:with_tts, :deck, :ground, :equipment]
+#task ttsproof: [:with_tts, :actions, :ground, :equipment]
 
 desc 'Build everything, with all the options'
-task all: [:with_tts, :with_proofs, :deck, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
+task all: [:with_tts, :with_proofs, :actions, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
 
-desc 'Build boss cards'
-task boss: [:with_tts, :with_proofs, :bosses]
+desc 'Build action cards'
+task action: [:with_tts, :with_proofs, :actions]
+desc 'Build ground cards'
+task gnd: [:with_tts, :with_proofs, :ground]
+desc 'Build class cards'
+task class: [:with_tts, :with_proofs, :classes]
 desc 'Build equipment cards'
 task equip: [:with_tts, :with_proofs, :equipment]
+desc 'Build boss action cards'
+task bossaction: [:with_tts, :with_proofs, :bossactions]
+desc 'Build boss cards'
+task boss: [:with_tts, :with_proofs, :bosses]
 desc 'Build chits'
-task equip: [:with_tts, :with_proofs, :chits]
+task chit: [:with_tts, :with_proofs, :chits]
 
 desc 'Build the deck'
-task(:deck)     { load 'src/deck.rb' }
+task(:actions)     { load 'src/actions.rb' }
 task(:ground)     { load 'src/ground.rb' }
-task(:equipment)     { load 'src/equipment.rb' }
 task(:classes)     { load 'src/classes.rb' }
+task(:equipment)     { load 'src/equipment.rb' }
 task(:bossactions)     { load 'src/bossactions.rb' }
 task(:bosses)     { load 'src/bosses.rb' }
 task(:chits)     { load 'src/chits.rb' }

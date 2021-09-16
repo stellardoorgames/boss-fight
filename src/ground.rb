@@ -9,7 +9,7 @@ Squib::Deck.new(width: 300, height: 300, cards: data.nrows) do
   use_layout file: 'layouts/ground.yml'
 
   text str: data.name, layout: :name
-  #text str: data.type, layout: :type
+  text str: data.type, layout: :type
   #text str: data.subtype, layout: :subtype
   text str: data.text, layout: :text
   svg file: data.image, layout: :image
