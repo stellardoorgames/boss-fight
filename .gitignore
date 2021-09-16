@@ -1,4 +1,5 @@
 _output/*.png
+!_output/tts_*.png
 _output/*.pdf
 ~$*
 .DS_Store
