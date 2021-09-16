@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 /_output/tts_*.png filter=lfs diff=lfs merge=lfs -text
+/data/*.xlsx filter=lfs diff=lfs merge=lfs -text
