@@ -6,16 +6,16 @@ require 'rake/clean'
 CLEAN.include('_output/*').exclude('_output/gitkeep.txt')
 
 desc 'By default, just build the deck without extra options'
-task default: [:actions, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
+task default: [:actions, :ground, :equipment, :classes, :bossactions, :bosses]
 
 desc 'Build everything for Tabletop Simulator'
-task tts: [:with_tts, :actions, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
+task tts: [:with_tts, :actions, :ground, :equipment, :classes, :bossactions, :bosses]
 
 #desc 'Build everything for Tabletop Simulator'
 #task ttsproof: [:with_tts, :actions, :ground, :equipment]
 
 desc 'Build everything, with all the options'
-task all: [:with_tts, :with_proofs, :actions, :ground, :equipment, :classes, :bossactions, :bosses, :chits]
+task all: [:with_tts, :with_proofs, :actions, :ground, :equipment, :classes, :bossactions, :bosses]
 
 desc 'Build action cards'
 task action: [:with_tts, :with_proofs, :actions]
