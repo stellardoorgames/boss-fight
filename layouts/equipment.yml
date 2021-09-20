@@ -60,6 +60,13 @@ cost_icon:
   height: 70
   width: 70
 
+classcolor:
+  x: 20
+  y: 20
+  height: deck - 40
+  width: deck - 40
+  radius: 12
+
 version:
   font: Arial 6
   x: 15

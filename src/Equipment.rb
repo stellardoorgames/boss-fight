@@ -8,11 +8,18 @@ Squib::Deck.new(cards: data.nrows) do
   background color: :white
   use_layout file: 'layouts/equipment.yml'
 
+  st = data.archetype.each_index.select { |i| data.archetype[i] == "Fighter"}
+  rect range: st, fill_color: '#fcd17b', layout: :classcolor
+  st = data.archetype.each_index.select { |i| data.archetype[i] == "Rogue"}
+  rect range: st, fill_color: '#d3efa9', layout: :classcolor
+  st = data.archetype.each_index.select { |i| data.archetype[i] == "Mage"}
+  rect range: st, fill_color: '#d2c0f0', layout: :classcolor
+
   text str: data.name, layout: :name
   text str: data.archetype.map { |s| "Class: #{s}"}, layout: :archetype
   text str: data.value.map { |s| "Value : #{s}"}, layout: :value
 
-  text str: data.cost.map { |s| "Cost:\n#{s}" }, layout: :cost do |embed|
+  text str: data.cost.map { |s| "Cost\n#{s}" }, layout: :cost do |embed|
 	embed.svg key: '[ap]', file: 'img/action-point.svg', layout: :cost_icon
 	embed.svg key: '[ar]', file: 'img/arrow.svg', layout: :cost_icon
 	embed.svg key: '[po]', file: 'img/poison.svg', layout: :cost_icon

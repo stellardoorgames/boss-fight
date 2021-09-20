@@ -8,6 +8,13 @@ Squib::Deck.new(cards: data.nrows) do
   background color: :white
   use_layout file: 'layouts/classes.yml'
 
+  st = data.character.each_index.select { |i| data.character[i] == "Fighter"}
+  rect range: st, fill_color: '#fcd17b', layout: :classcolor
+  st = data.character.each_index.select { |i| data.character[i] == "Rogue"}
+  rect range: st, fill_color: '#d3efa9', layout: :classcolor
+  st = data.character.each_index.select { |i| data.character[i] == "Mage"}
+  rect range: st, fill_color: '#d2c0f0', layout: :classcolor
+
   text str: data.character, layout: :character
   text str: data.ability1, layout: :ability1
   text str: data.ability2, layout: :ability2
