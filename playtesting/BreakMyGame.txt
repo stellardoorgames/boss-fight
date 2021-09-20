@@ -1,0 +1,6 @@
+:Bullet_1: Boss Room (working title)
+:Bullet_2: 3 Players, preferably not including myself
+:Bullet_3: 60 minutes
+:Bullet_4: Each player takes on the role one of the classic trinity of fantasy character types (fighter, rogue, mage) to take down a boss monster in this asymmetrical cooperative deck-builder
+:Bullet_5: Tabletop Simulator
+:Bullet_6: It's an early prototype, only been tested a few times before. 

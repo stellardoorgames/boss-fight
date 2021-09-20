@@ -18,6 +18,7 @@ Squib::Deck.new(cards: data.nrows) do
 	embed.svg key: '[po]', file: 'img/poison.svg', layout: :cost_icon
 	embed.svg key: '[fi]', file: 'img/fire.svg', layout: :cost_icon
 	embed.svg key: '[wa]', file: 'img/water.svg', layout: :cost_icon
+	embed.svg key: '[he]', file: 'img/health.svg', layout: :cost_icon
   end
 
   text str: data.text, layout: :text do |embed|

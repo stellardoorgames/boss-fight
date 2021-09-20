@@ -21,6 +21,7 @@ Squib::Deck.new(cards: data.nrows) do
 	embed.svg key: '[po]', file: 'img/poison.svg', layout: :embedded
 	embed.svg key: '[fi]', file: 'img/fire.svg', layout: :embedded
 	embed.svg key: '[wa]', file: 'img/water.svg', layout: :embedded
+	embed.svg key: '[he]', file: 'img/health.svg', layout: :embedded
   end
 
   text str: data.ability2text, layout: :ability2text do |embed|
@@ -32,6 +33,7 @@ Squib::Deck.new(cards: data.nrows) do
 	embed.svg key: '[po]', file: 'img/poison.svg', layout: :embedded
 	embed.svg key: '[fi]', file: 'img/fire.svg', layout: :embedded
 	embed.svg key: '[wa]', file: 'img/water.svg', layout: :embedded
+	embed.svg key: '[he]', file: 'img/health.svg', layout: :embedded
   end
 
   text str: MySquibGame::VERSION, layout: :version

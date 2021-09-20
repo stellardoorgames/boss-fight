@@ -4,7 +4,7 @@ Three adventurers take on a series of boss monsters, growing and improving as th
 
 # Objective
 
-What is the object of the game?
+Defeat one or more boss monsters.
 
 # Components
 
