@@ -8,11 +8,17 @@ Squib::Deck.new(cards: data.nrows) do
   background color: :white
   use_layout file: 'layouts/actions.yml'
 
+  st = data.stat.each_index.select { |i| data.stat[i] == "str.svg"}
+  rect range: st, fill_color: '#fcd17b', layout: :classcolor
+  st = data.stat.each_index.select { |i| data.stat[i] == "agl.svg"}
+  rect range: st, fill_color: '#d3efa9', layout: :classcolor
+  st = data.stat.each_index.select { |i| data.stat[i] == "int.svg"}
+  rect range: st, fill_color: '#d2c0f0', layout: :classcolor
+
   text str: data.name, layout: :name
 
   text str: data.value, layout: :VAL
   text str: data.def, layout: :DEF
-
 
   svg file: data.stat, layout: :ATR
   svg file: 'checked-shield.svg', layout: :shield
